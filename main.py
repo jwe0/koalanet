@@ -45,7 +45,7 @@ print(logo, end="\n")
 option = int(input("enter choice: "))
 
 def clear():
-    os.system("cls || clear")
+    os.system("cls") if os.name == "nt" else os.system("clear")
 
 def a():
     print(f"{YELLOW}RELAUNCH THE CLIENT TO CLOSE THE PROCESS{WHITE}")
